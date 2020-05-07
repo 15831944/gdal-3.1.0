@@ -986,9 +986,9 @@ OPENJPEG_LIB = $(OPENJPEG2_DIR)\msvc\$(RELEASEDIR)\openjp2.lib
 WEBP_ENABLED = YES
 WEBP_CFLAGS = -I$(DEV_BASE)/$(WEBP_DIR)/src
 !IFDEF DEBUG
-WEBP_LIBS = $(DEV_BASE)/$(WEBP_DIR)/$(DEBUGDIR)/libwebp.lib
+WEBP_LIBS = $(DEV_BASE)/$(WEBP_DIR)/msvc/$(DEBUGDIR)/libwebp.lib
 !ELSE
-WEBP_LIBS = $(DEV_BASE)/$(WEBP_DIR)/$(RELEASEDIR)/libwebp.lib
+WEBP_LIBS = $(DEV_BASE)/$(WEBP_DIR)/msvc/$(RELEASEDIR)/libwebp.lib
 !ENDIF
 
 # Uncomment for libxml2 support (for cpl_xml_validate.cpp routines, used optionaly by the GML driver)

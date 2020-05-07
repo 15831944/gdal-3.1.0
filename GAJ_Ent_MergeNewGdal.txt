@@ -50,12 +50,12 @@ Subdirectories to merge
 	frmts/ecw/makefile.vc  --modify output directories 
 	ogr/ogrsf_frmts/makefile.vc (clean plugin directories)
 	ogr/ogrsf_frmts/filegdb/makefile.vc --modify output directories
-	port/cpl_vsi.h
-	gcore/gdal.h
-	gcore/gdalproxypool.cpp
-	ogr/ogr_core.h
-	ogr/ogrsf_frmts/gpkg/ogr_geopackage.h
-	ogr/ogrsf_frmts/gpkg/ogrgeopackagedatasource.cpp
-	ogr/ogrsf_frmts/gpkg/ogrgeopackagedriver.cpp
+	port/cpl_vsi.h 							(ifndef _MSC_VER arround VSIL_STRICT_ENFORCE)
+	gcore/gdal.h							(Add GDAL_OF_GPKG_FASTACESSS)
+	gcore/gdalproxypool.cpp						(Add table check in _GDALProxyPoolCacheEntry)
+	ogr/ogr_core.h							(Skip this going forward)
+	ogr/ogrsf_frmts/gpkg/ogr_geopackage.h				(Skip this going forward)
+	ogr/ogrsf_frmts/gpkg/ogrgeopackagedatasource.cpp		(Add GDAL_OF_GPKG_FASTACCESS && options GPKG_Fast)
+	ogr/ogrsf_frmts/gpkg/ogrgeopackagedriver.cpp			(Add GPKG_FAST to options string)
  
 

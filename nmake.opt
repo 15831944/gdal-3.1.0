@@ -299,10 +299,10 @@ PROJ6DIR = $(DEV_BASE)/$(PROJ_DIR)
 # PROJ stuff (required dependency: PROJ >= 6)
 PROJ_INCLUDE = -I$(PROJ6DIR)\src
 !IFDEF DEBUG
-PROJ_LIB = $(PROJ6DIR)/msvc/$(DEBUGDIR)/proj_6_0_d.lib
+PROJ_LIB = $(PROJ6DIR)/msvc/$(DEBUGDIR)/proj.lib
 PROJ_LIBIBRARY = $(PROJ_LIB)
 !ELSE
-PROJ_LIB = $(PROJ6DIR)/msvc/$(RELEASEDIR)/proj_6_0.lib
+PROJ_LIB = $(PROJ6DIR)/msvc/$(RELEASEDIR)/proj.lib
 PROJ_LIBLIBRARY = $(PROJ_LIB)
 !ENDIF
 

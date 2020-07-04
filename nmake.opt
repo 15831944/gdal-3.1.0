@@ -41,6 +41,7 @@
 # Check version of Visual C++ compiler:
 # nmake -f makefile.vc MSVC_VER=xxxx
 # where xxxx is one of following (older versions no longer supported):
+# 1920 = 16.0(2019)
 # 1910 = 15.0(2017)
 # 1900 = 14.0(2015)
 ##No longer supported

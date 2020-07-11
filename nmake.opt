@@ -103,7 +103,7 @@ HTMLDIR = $(GDAL_HOME)\html
 !ENDIF
 
 #Java Definitions
-SWIGJAVA = 1
+SWIGJAVA = 0
 JAVA_HOME = "C:\Program Files\Java\jdk1.8.0_221"
 ANT_HOME = $(ANT_DIR)
 SWIG = $(SWIG_JAVA)
@@ -466,7 +466,11 @@ ECWCONF = win32
 #ECW_PLATFORM_DIR = Win32
 #!ENDIF
 
+ECWDIR = "$(ECW_DIR)"
+!IFNDEF ECWDIR
 ECWDIR  =  "C:\Intergraph\ERDAS ECW JPEG 2000 SDK 5.4.0"
+!ENDIF
+
 ECWFLAGS = -DECWSDK_VERSION=50 \
        -I$(ECWDIR)\include \
        -I$(ECWDIR)\include/NCSECW/api -I$(ECWDIR)\include/NCSECW/jp2 \
